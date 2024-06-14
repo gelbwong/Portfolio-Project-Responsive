@@ -1,0 +1,52 @@
+:root {
+  --background-colour: rgb(232, 227, 221);
+  --secondary-background: rgba(218, 213, 208, 0.9);
+  --text-colour: rgb(56, 53, 49);
+  --link-colour: rgb(85, 85, 189);
+  --link-hover-colour: rgb(75, 75, 141);
+}
+
+body {
+  background-color: var(--background-colour);
+}
+
+.container {
+  color: var(--text-colour);
+}
+
+.navbar-light {
+  background-color: var(--secondary-background) !important;
+}
+
+.brand-logo {
+  max-width: 150px;
+}
+
+.find-out-more-link {
+  color: var(--link-colour);
+}
+.find-out-more-link:hover {
+  color: var(--link-hover-colour);
+}
+
+h1 {
+  font-size: 65px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .find-out-more-link {
+    font-size: 13px;
+  }
+}
