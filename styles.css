@@ -14,7 +14,8 @@ body {
   color: var(--background-colour);
 }
 
-.container {
+.container,
+.link-hover-only {
   color: var(--text-colour);
 }
 
@@ -26,13 +27,11 @@ body {
   max-width: 150px;
 }
 
-.find-out-more-link,
-.project-try-link {
+.link-colour {
   color: var(--link-colour);
 }
-.find-out-more-link:hover,
-.project-try-link:hover,
-.project-credits-links:hover {
+.link-colour:hover,
+.link-hover-only:hover {
   color: var(--link-hover-colour);
 }
 
