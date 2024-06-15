@@ -10,6 +10,10 @@ body {
   background-color: var(--background-colour);
 }
 
+.hidden {
+  color: var(--background-colour);
+}
+
 .container {
   color: var(--text-colour);
 }
@@ -22,15 +26,89 @@ body {
   max-width: 150px;
 }
 
-.find-out-more-link {
+.find-out-more-link,
+.project-try-link {
   color: var(--link-colour);
 }
-.find-out-more-link:hover {
+.find-out-more-link:hover,
+.project-try-link:hover,
+.project-credits-links:hover {
   color: var(--link-hover-colour);
+}
+
+.arrow {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  margin-bottom: 100px;
 }
 
 h1 {
   font-size: 65px;
+}
+
+.initial-title-gap {
+  margin-top: 200px;
+}
+
+.spacing {
+  padding: 90px;
+}
+.about-spacing {
+  padding: 65px;
+}
+.projects-spacing {
+  padding: 150px;
+}
+
+.footer-deco,
+.project-credits-links {
+  text-decoration: none;
+  color: var(--text-colour);
+}
+
+.youtube-containers {
+  text-align: center;
+}
+
+.youtube-images {
+  max-width: 200px;
+}
+
+.img-descriptions {
+  font-size: 13px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.img-titles {
+  margin-top: 10px;
+}
+
+.hobby-title {
+  margin-top: 90px;
+}
+
+.project-text {
+  margin-top: 30px;
+}
+.project-icon {
+  max-width: 100px;
+}
+.project-credits {
+  margin-top: 100px;
+}
+
+.contact-icons {
+  max-width: 100px;
+}
+.contact-elements {
+  padding: 50px 60px;
+}
+
+footer {
+  background-color: var(--secondary-background);
+  padding: 20px;
 }
 
 @media (max-width: 600px) {
@@ -48,5 +126,35 @@ h1 {
   }
   .find-out-more-link {
     font-size: 13px;
+  }
+  .img-descriptions {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .project-icon {
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-text {
+    margin-top: 100px;
+  }
+  .project-icon {
+    max-width: 80px;
+  }
+
+  .contact-text {
+    padding-top: 0px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .img-descriptions {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  .container {
+    max-width: 850px;
   }
 }
